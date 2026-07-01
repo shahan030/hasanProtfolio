@@ -1,0 +1,29 @@
+.gradient-line-about{
+  width: 220px;
+  height: 2px;
+  border-radius: 10px;
+  margin: 10px 0;
+
+  background: linear-gradient(
+    90deg,
+    #fd0000,
+    #04ff00,
+    #ffff00
+  );
+
+  box-shadow:
+    0 0 10px #d946ef,
+    0 0 20px #a855f7;
+}
+
+.aboutText {
+  max-width: 900px;
+  width: 90%;
+  margin: 30px auto 0;
+  text-align: center;
+
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.8;
+
+  color: rgb(200, 196, 196);
+}

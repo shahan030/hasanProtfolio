@@ -1,0 +1,148 @@
+.view-page {
+  margin-top: 100px;
+}
+
+
+.gradient-line-view {
+  width: 270px;
+  height: 1px;
+  border-radius: 10px;
+  margin: 10px 0 80px;
+
+  background: linear-gradient(
+    90deg,
+    #fd0000,
+    #04ff00,
+    #ffff00
+  );
+
+  box-shadow:
+    0 0 10px #d946ef,
+    0 0 20px #a855f7;
+}
+
+.video-slider {
+  height: 650px;
+  overflow: visible;
+  padding-top: 40px;
+}
+
+
+.swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+
+.video-slide {
+  width: 350px !important;
+  height: 450px;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+
+
+.swiper-slide {
+  opacity: 0.5;
+  transform: scale(0.85);
+}
+
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.video-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.swiper-slide-active .video-box {
+  transform: translateY(-40px);
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(217, 70, 239, 0.4);
+}
+
+
+
+.swiper-slide-active .video-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(161, 25, 152, 0.4),
+    transparent
+  );
+  z-index: 1;
+}
+
+
+.info-box {
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.info-box h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.info-box p {
+  margin-top: 5px;
+  color: rgba(255,255,255,0.7);
+}
+
+
+@media (max-width: 768px) {
+  .video-slide {
+    width: 300px !important;
+    height: 400px;
+  }
+
+  .video-slider {
+    height: 580px;
+  }
+
+  .info-box h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .video-slide {
+    width: 250px !important;
+    height: 330px;
+  }
+
+  .video-slider {
+    height: 500px;
+  }
+
+  .swiper-slide-active .video-box {
+    transform: translateY(-20px);
+  }
+}
