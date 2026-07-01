@@ -17,7 +17,7 @@ const Home = () => {
             <div className='left-content col-lg-6 col-md-6'>
               <h5 className='text-white'>Hasan Basheer</h5>
               <div className='gradient-line'></div>
-              <h1 className='text-white'>PROFESSIONAL VIDEO EDITOR</h1>
+              <h1 className='text-white'>CREATIVE MARKETING SPECIALIST</h1>
               <p className='text-white'>Making your videos look more cool.</p>
 
               <a
