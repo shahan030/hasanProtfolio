@@ -18,7 +18,7 @@ const Home = () => {
               <h5 className='text-white'>Hasan Basheer</h5>
               <div className='gradient-line'></div>
               <h1 className='text-white'>CREATIVE MARKETING SPECIALIST</h1>
-              <p className='text-white'>Making your videos look more cool.</p>
+              <p className='text-white'>Content. Strategy. Creativity. Growth</p>
 
               <a
                 href="https://api.whatsapp.com/send?phone=917736951512&text=Hello%20Hasan"
